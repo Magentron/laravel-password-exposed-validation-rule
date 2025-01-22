@@ -2,8 +2,8 @@
 
 namespace DivineOmega\LaravelPasswordExposedValidationRule\Factories;
 
-use DivineOmega\DOFileCachePSR6\CacheItemPool;
 use DivineOmega\PasswordExposed\PasswordExposedChecker;
+use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Class PasswordExposedCheckerFactory.
@@ -17,11 +17,8 @@ class PasswordExposedCheckerFactory
      */
     public function instance()
     {
-        $cache = new CacheItemPool();
-
-        $cache->changeConfig([
-            'cacheDirectory' => $this->getCacheDirectory(),
-        ]);
+        $cacheDirectory = $this->getCacheDirectory();
+        $cache          = new FilesystemAdapter('', 0, $cacheDirectory);
 
         return new PasswordExposedChecker(null, $cache);
     }

@@ -1,6 +1,8 @@
+(forked from [dilneiss/laravel-password-exposed-validation-rule](https://github.com/dilneiss/laravel-password-exposed-validation-rule))
+
 # 🔒 Laravel Password Exposed Validation Rule
 
-This package provides a Laravel validation rule that checks if a password has been exposed in a data breach. It uses the haveibeenpwned.com passwords API via the [`divineomega/password_exposed`](https://github.com/DivineOmega/password_exposed) library.
+This package provides a Laravel validation rule that checks if a password has been exposed in a data breach. It uses the haveibeenpwned.com passwords API via the [`magentron/password_exposed`](https://github.com/Magentron/password_exposed) library.
 
 <p align="center">
     <img src="assets/images/laravel-password-exposed.png">
@@ -18,7 +20,7 @@ This package provides a Laravel validation rule that checks if a password has be
 To install, just run the following Composer command.
 
 ```
-composer require divineomega/laravel-password-exposed-validation-rule
+composer require magentron/laravel-password-exposed-validation-rule
 ```
 
 Please note that this package requires Laravel 5.1 or above.
