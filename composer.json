@@ -3,11 +3,11 @@
     "description": "Laravel validation rule that checks if a password has been exposed in a data breach (forked from dilneiss/laravel-password-exposed-validation-rule)",
     "type": "library",
 	"replace": {
-		"divineomega/laravel-password-exposed-validation-rule": "<=2.5.0",
-		"dilneiss/laravel-password-exposed-validation-rule": "<=3.1"
+		"divineomega/laravel-password-exposed-validation-rule": "*",
+		"dilneiss/laravel-password-exposed-validation-rule": "*"
 	},
     "require": {
-        "php": "^7.1||^8.0",
+        "php": "^7.4||^8.0",
         "illuminate/contracts": "^5.1||^6.0||^7.0||^8.0||^9.0||^10.0||^11.0|^12.0",
         "magentron/password_exposed": "^3.2.2",
         "symfony/cache": "^7.3.2"
